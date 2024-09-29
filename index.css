@@ -1,0 +1,139 @@
+ul {
+    list-style-type: none;
+}
+
+
+header nav {
+   margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 1.5rem;
+}
+#startfeed a{
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    font-family: "calibri", sans-serif;
+    font-weight: bold;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 21px;
+}
+
+#create a {
+    font-size: large;
+    text-decoration: none;
+    font-family: "calibri", sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+#search-bar-container {
+    width: 100%;
+}
+
+#search-bar-container input {
+    font-size: large;
+    font-family: "calibri", sans-serif;
+    text-indent: 2rem;
+    border-radius: 15px;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: whitesmoke;
+    border: none;
+    /*For baggrundsbillede i searchbar*/
+    background-image: url("https://w7.pngwing.com/pngs/254/829/png-transparent-computer-icons-magnifying-glass-magnifier-magnifying-glass.png");
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 1rem;
+}
+
+
+header #button-container ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button img {
+    height: 1.5rem;
+    display: flex;
+    padding: 1rem;
+}
+
+
+#more-ideas-bar ul {
+    display: flex;
+    overflow-x: auto;
+}
+
+.more-ideas {
+    border-radius: 15px;
+    padding: 1rem;--------
+    height: 5rem;
+    width: 15rem;
+    margin: 0.5rem;
+    display: flex;
+    background-color: beige;
+ }
+
+section .more-ideas img {
+    border-radius: 10px;
+    width: 3.8rem;
+}
+
+.more-ideas ul {
+    font-size:medium;
+    line-height: 0.4;
+    font-family: "calibri", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.more-ideas ul li p2 {
+    font-size:large;
+    font-weight: bold;
+}
+
+
+
+#image-wall {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+}
+
+#image-wall .pins {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-family: "calibri", sans-serif;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+#image-wall .pins:hover {
+    filter: brightness(0.5);
+}
+
+#image-wall .pins img {
+    width: 18rem;
+    margin: 0.5rem;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
