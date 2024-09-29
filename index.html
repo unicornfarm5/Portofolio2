@@ -1,20 +1,142 @@
+<!DOCTYPE html>
+<html lang= "en">
 
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>first javascipt application></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio2</title>
+<link rel= 'stylesheet' href='index.css'/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
+
+<header>
+    <nav>
+        <img src="https://logos-world.net/wp-content/uploads/2020/09/Pinterest-Logo-2011-present.png" id="logo">
+        <div id="startfeed"> <a href="" >Startfeed</a> </div>
+        <div id="create"> <a href="" >Opret</a> </div>
+        <div id ="search-bar-container"> <input type = "text" placeholder = "Søg"> </div>
+
+        <div id="button-container">
+            <ul>
+                <li class="header-button" alt="Notiflikationer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROUIxlcDgv7RqZIByl1OqXVkTJxZVeYCJ8JA&s" ></li>
+                <li class="header-button" alt="Beskeder"> <img src="data:image/png;base64,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"></li>
+                <li class="header-button" alt="Din profil"> <img src="https://romanroadtrust.co.uk/wp-content/uploads/2018/01/profile-icon-png-898.png"></li>
+                <li class="header-button" alt="Konti og flere muligheder"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Xkb1AK73GgbQGHljfLxhbzYHODivg7T7gg&s"></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
 <body>
+ <section id="more-ideas-bar">
+  <ul>
+      <li><div class="more-ideas">
+                <img src="https://i.pinimg.com/474x/d6/87/90/d68790237b31077b25ddcb1671db4d2b.jpg">
+                  <ul>
+                      <li><p>Flere idèer til</p> </li>
+                      <li><p2>Creativity</p2></li>
+                  </ul>
+      </div></li>
 
-<main>
-    <h1>Hellooo</h1>
+      <li><div class="more-ideas">
+              <img src="https://i.pinimg.com/474x/df/1a/07/df1a070627bfeceb53876a753fa7429b.jpg">
+                    <ul>
+                      <li><p>Flere idèer til</p> </li>
+                      <li><p2>Hairstyles</p2></li>
+                    </ul>
+      </div></li>
 
+      <li><div class="more-ideas">
+          <img src="https://i.pinimg.com/474x/54/bd/e1/54bde1ce9d38ab94898cc3067026e5ec.jpg">
+      <ul>
+          <li><p>Flere idèer til</p> </li>
+          <li><p2>Fashion</p2></li>
+      </ul>
+      </div></li>
 
-</main>
+      <li><div class="more-ideas">
+          <img src="https://i.pinimg.com/474x/56/67/93/5667936906181a6fbe0501b471e2b5bd.jpg">
+      <ul>
+          <li><p>Flere idèer til</p> </li>
+          <li><p2>Codeing👩‍💻</p2></li>
+      </ul>
+      </div></li>
 
-<script src="index.js"></script>
+      <li><div class="more-ideas">
+          <img src="https://i.pinimg.com/474x/af/16/eb/af16eb4cd9939ba5d7b567313bbb6dc3.jpg">
+      <ul>
+          <li><p>Flere idèer til</p> </li>
+          <li><p2>Food</p2></li>
+      </ul>
+      </div></li>
 
+      <li><div class="more-ideas">
+          <img src="https://i.pinimg.com/474x/59/f8/c7/59f8c760495eee8c39f0b58cd470bafa.jpg">
+      <ul>
+          <li><p>Flere idèer til</p> </li>
+          <li><p2>DIY</p2></li>
+      </ul>
+      </div></li>
+
+      <li><div class="more-ideas">
+          <img src="https://i.pinimg.com/474x/36/c7/10/36c710771cdbb01ad2cd31a72171740e.jpg">
+      <ul>
+          <li><p>Flere idèer til</p> </li>
+          <li><p2>Room things</p2></li>
+      </ul>
+      </div></li>
+
+      <li><div class="more-ideas">
+          <img src="https://i.pinimg.com/474x/84/49/63/844963ddcc5b0743e780a4bb74ae6c41.jpg">
+          <ul>
+              <li><p>Flere idèer til</p> </li>
+              <li><p2>Quotes</p2></li>
+          </ul>
+      </div></li>
+
+      <li><div class="more-ideas">
+          <img src="https://i.pinimg.com/474x/1d/19/8b/1d198bdeb30f9fab5919ce85cba2a4cb.jpg">
+          <ul>
+              <li><p>Flere idèer til</p> </li>
+              <li><p2>Horses</p2></li>
+          </ul>
+      </div></li>
+  </ul>
+ </section>
+
+<section id="image-wall">
+    <div class="pins"> <img src="https://i.pinimg.com/474x/91/1a/32/911a32f986176b51e31dc17369df92c9.jpg" >Trendy crochet styles</div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/92/cf/04/92cf04f6cf9daa3877995335e270f80f.jpg" >🖤🖤🖤</div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/8d/37/53/8d37531ea28f8f42d6588158681fc783.jpg" ></div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/9f/84/bb/9f84bb90fa63fa067c59155f41ece215.jpg" ></div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/f2/5a/58/f25a58cecde4b7b5d4a9fc9aa6f5f7e1.jpg" >Spar 25% på vores 7 nye farver 🩷
+        <a href="https://www.asos.com/dk/seqwl/seqwl-bordeaux-chunky-mary-jane-sko-med-hl/prd/206704096?affid=28837&_cclid=Google_CjwKCAjw9eO3BhBNEiwAoc0-jZ2JfMHcHe_O_6EC-JCs1AM1IDvN8Md7qwIED2E1uLOSXX8zGWpXqBoCGEoQAvD_BwE&channelref=product+search&mk=abc&ppcadref=21390817563%7C%7C&gad_source=1&gclid=CjwKCAjw9eO3BhBNEiwAoc0-jZ2JfMHcHe_O_6EC-JCs1AM1IDvN8Md7qwIED2E1uLOSXX8zGWpXqBoCGEoQAvD_BwE&gclsrc=aw.ds">Asos.com</a>
+    </div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/24/25/80/2425801d3db75e17b1313d853ac84adf.jpg" ></div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/01/6d/f8/016df8fe9f049d58a4d2f1562dde327c.jpg" ></div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/8b/03/47/8b03474550dbfe85629e52fea2e6d0a6.jpg" ></div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/65/fd/ee/65fdeefc55bbe5bf9b53c607fb7dde10.jpg" >DIY maxi dress</div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/cb/4b/7e/cb4b7e1361c2c36b4c5c46e57d16ee1b.jpg"> </div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/c0/3a/f7/c03af753d84040690e9ba67905e2879b.jpg"> </div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/cc/97/86/cc978668f9f9df2d5ed218d502252c35.jpg"> </div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/95/8c/b3/958cb319441172b9db6caa64f446c573.jpg"> </div>
+    <div class="pins"> <img src="https://i.pinimg.com/736x/5c/1e/f0/5c1ef05629bf899bc67ba4959bc49ae7.jpg">Crochet flower bag by @imnotrosey
+        <a href="https://www.instagram.com/imnotrosey/">Instagram</a>
+    </div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/19/de/27/19de27f77e563ad8fab3c918d088a22c.jpg"></div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/83/f4/15/83f4156b8606acb0625bccda556c1d62.jpg"> </div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/05/90/50/05905074ca8bcfa11535c2ec0aec8f2e.jpg"> </div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/6d/90/01/6d900172429864400f20fbd911248b25.jpg">Arm ring</div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/ef/fc/56/effc5673c7e704bcc8c794873542e4ce.jpg"> </div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/b5/6c/c6/b56cc6f7da51355f76e7125db8238ac7.jpg"> </div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/18/35/0d/18350dbc5313a287df764924836987e6.jpg">VMAAs 2024: Chappel Roan</div>
+    <div class="pins"> <img src="https://i.pinimg.com/474x/4e/2f/e9/4e2fe9a1a6a797b9b5ef87af7313a010.jpg"> </div>
+    <div class="pins"> <img src="  https://i.pinimg.com/474x/b4/bb/6c/b4bb6c03cd1330d5c34a342a4a711849.jpg">Bows for fashion week</div>
+
+</section>
 
 </body>
-</html>
+
